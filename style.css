@@ -1,22 +1,28 @@
 body{
-    background-color: rgb(42, 41, 120);
-}
-.avatar img{
-    width: 200px;
-    border-radius: 50% ;
-    border: 10px double rgb(230, 230, 73);
-}
-h1{
-    color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AudioBlock{
+    width: 350px;
+    height: 400px;
+    border: 1px  solid;
+    border-radius: 39px;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    transition: 300ms;
+    
 }
-span{
-    font-weight: 900;
-    color: rgb(217, 201, 26);
+.AudioBlock:hover{
+    border: 0px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 100px 30px rgb(42, 140, 153);
+}
+img{
+    width: 100%;
+    border-radius: 39px;
 }
